@@ -2,6 +2,7 @@ FROM ubuntu:latest
 RUN apt update && apt upgrade -y
 RUN apt-get install python3 -y
 RUN apt-get install python3-pip -y 
+
 RUN mkdir /app
 WORKDIR /app
 COPY requirements.txt requirements.txt
